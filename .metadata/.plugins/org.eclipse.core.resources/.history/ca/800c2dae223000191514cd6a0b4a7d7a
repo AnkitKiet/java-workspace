@@ -1,0 +1,30 @@
+import java.util.Comparator;
+
+public class Demo1Pojo implements Comparator<Demo1Pojo> {
+
+	private String name;
+	private int id;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	@Override
+	public int compare(Demo1Pojo o1, Demo1Pojo o2) {
+		// TODO Auto-generated method stub
+		return ((Integer) o1.getId()).compareTo(o2.getId());
+	}
+
+}

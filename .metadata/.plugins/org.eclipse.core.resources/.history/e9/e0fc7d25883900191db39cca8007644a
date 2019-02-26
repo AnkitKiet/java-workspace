@@ -1,0 +1,9 @@
+package volatilemodifier;
+
+public class VolatileService {
+
+	public static void main(String[] args) {
+		VolatilePojo volatilePojo=new VolatilePojo();
+	}
+	
+}

@@ -1,0 +1,9 @@
+package producerconsumer;
+
+import java.util.concurrent.BlockingQueue;
+
+public class Producer {
+
+	public Producer(BlockingQueue<Integer>){}
+	
+}

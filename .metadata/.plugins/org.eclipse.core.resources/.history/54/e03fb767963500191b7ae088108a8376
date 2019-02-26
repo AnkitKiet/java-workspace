@@ -1,0 +1,19 @@
+package producerconsumer;
+
+import java.util.concurrent.BlockingQueue;
+
+public class Producer implements new Runnable() {
+	public void run() {
+		
+	}
+}
+
+	private BlockingQueue<Integer> blockingQueue;
+
+	public Producer(BlockingQueue<Integer> blockingQueue) {
+		this.blockingQueue = blockingQueue;
+	}
+
+	
+	
+}

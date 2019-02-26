@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;volatilemodifier.VolatileDao&apos; to &apos;VolatileThread&apos;&#x0D;&#x0A;- Original project: &apos;Multithreading&apos;&#x0D;&#x0A;- Original element: &apos;volatilemodifier.VolatileDao&apos;&#x0D;&#x0A;- Renamed element: &apos;volatilemodifier.VolatileThread&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;VolatileDao&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;volatilemodifier{VolatileDao.java[VolatileDao" matchStrategy="1" name="VolatileThread" qualified="false" references="true" similarDeclarations="false" stamp="1551158591063" textual="false" version="1.0"/>
+</session>
