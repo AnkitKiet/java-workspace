@@ -1,0 +1,43 @@
+package edu.ankit.aop.aspect;
+
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.AfterThrowing;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.stereotype.Component;
+
+@Aspect
+@Component
+public class LoggingAspect {
+
+	/*
+	 * @Before("execution(public void addAccount())") public void
+	 * logBeforeAddAccount() {
+	 * System.out.println("Logging before for Add Account"); }
+	 * 
+	 * @After("execution(public void addAccount())") public void
+	 * logAfterAddAccount() {
+	 * System.out.println("Logging after for Add Account"); }
+	 */
+	@Pointcut("execution(* edu.ankit.aop.dao.AccountDao.addAccount())")
+	private void selectAddAccount() {
+	}
+
+	/*
+	 * @Around("selectAddAccount()") public void logAddAccount() {
+	 * System.out.println("Logging around for Add Account"); }
+	 *
+	 * 
+	 * @AfterReturning(pointcut = "selectAddAccount()", returning = "retVal")
+	 * public void afterReturningAdvice(Object retVal) {
+	 * System.out.println("After Returning Return Value = " + retVal); }
+	 */
+	@AfterThrowing(pointcut = "selectAddAccount()", throwing = "ex")
+	public void afterReturningAdvice(IllegalArgumentException ex) {
+		System.out.println("After Returning Return Value = " + ex.toString());
+	}
+
+}

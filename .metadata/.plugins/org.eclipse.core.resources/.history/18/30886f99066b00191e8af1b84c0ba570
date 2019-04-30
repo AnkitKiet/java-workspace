@@ -1,0 +1,5 @@
+package edu.ankit.aop.aspect;
+
+public class LoggingAspect {
+
+}

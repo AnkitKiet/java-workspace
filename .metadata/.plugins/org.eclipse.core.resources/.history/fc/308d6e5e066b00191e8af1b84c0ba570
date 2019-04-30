@@ -1,0 +1,13 @@
+package edu.ankit.aop;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import edu.ankit.aop.dao.AccountDao;
+
+public class MainApp {
+
+	AnnotationConfigApplicationContext annotationConfigApplicationContext = new AnnotationConfigApplicationContext(
+			DemoConfig.class);
+	AccountDao accountDao = annotationConfigApplicationContext.getBean("accountDao", AccountDao.class);
+
+}

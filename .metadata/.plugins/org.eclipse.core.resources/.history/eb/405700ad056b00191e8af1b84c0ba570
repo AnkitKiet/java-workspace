@@ -1,0 +1,5 @@
+package edu.ankit.aop.dao;
+
+public class AccountDao {
+
+}
