@@ -1,0 +1,25 @@
+package com.practice.gs;
+
+import java.util.Stack;
+
+/*
+ * Given a stack, the task is to sort it such that the top of the stack has the greatest element.
+ */
+
+public class StackSort {
+	public Stack<Integer> sort(Stack<Integer> s) {
+
+		if (!s.isEmpty()) {
+			int x = s.pop();
+			sort(s);
+			sortStack(s, x);
+		}
+
+		return s;
+
+	}
+
+	private void sortStack(Stack<Integer> s, int x) {
+
+	}
+}
