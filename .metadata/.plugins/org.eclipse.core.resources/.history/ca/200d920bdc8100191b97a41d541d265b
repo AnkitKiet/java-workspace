@@ -1,0 +1,13 @@
+package com.practice.maths;
+
+public abstract class Try {
+
+	public void printPub(){
+		
+	}
+	
+	private void print() {
+		System.out.println("Hello");
+	}
+
+}

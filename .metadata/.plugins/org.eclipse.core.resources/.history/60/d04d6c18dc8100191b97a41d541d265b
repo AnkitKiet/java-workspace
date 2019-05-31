@@ -1,0 +1,6 @@
+package com.practice.maths;
+
+public class Demo extends Try{
+
+	
+}

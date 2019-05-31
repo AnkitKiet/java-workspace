@@ -1,0 +1,64 @@
+package com.practice.upgrad;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class MergeArray {
+
+	Integer arr[] = new Integer[m + n];
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+		int m = scanner.nextInt();
+		int n = scanner.nextInt();
+		int arr1[] = new int[m];
+		int arr2[] = new int[n];
+		for (int i = 0; i < m; i++) {
+			arr1[i] = scanner.nextInt();
+		}
+		for (int i = 0; i < n; i++) {
+			arr2[i] = scanner.nextInt();
+		}
+		MergeArray obj = new MergeArray();
+		obj.merge(arr1, arr2, m, n);
+		// Arrays.sort(arr, Collections.reverseOrder());
+	}
+
+	void merge(int[] arr1, int[] arr2, int m, int n) {
+
+		int i = 0, j = 0;
+		int k = 0;
+		while (i < m && j < n) {
+			if (arr1[i] >= arr2[j]) {
+				arr[k] = arr1[i];
+				i++;
+			} else {
+				arr[k] = arr2[j];
+				j++;
+			}
+			k++;
+		}
+		while (i < m) {
+			arr[k] = arr1[i];
+			k++;
+			i++;
+		}
+		while (j < n) {
+			arr[k] = arr2[j];
+			k++;
+			j++;
+		}
+		
+	}
+
+	void sort(int arr[], int l, int r) {
+		if (l < r) {
+			int m = (l + r) / 2;
+			sort(arr, l, m);
+			sort(arr, m + 1, r);
+		}
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.practice.maths;
+
+public class Demo extends Try {
+
+	@Override
+	public void printPub() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void main(String[] args) {
+		Demo demo = new Demo();
+		demo.printPub();
+	}
+
+}

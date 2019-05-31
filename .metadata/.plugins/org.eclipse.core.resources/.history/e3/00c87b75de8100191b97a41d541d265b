@@ -1,0 +1,16 @@
+package com.practice.maths;
+
+public class Demo extends Try {
+
+	@Override
+	public void printPub() {
+		super.printPub();
+		System.out.println("Inside child");
+	}
+
+	public static void main(String[] args) {
+		Demo demo = new Demo();
+		demo.printPub();
+	}
+
+}

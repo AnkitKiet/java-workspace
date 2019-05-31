@@ -1,0 +1,16 @@
+package com.practice.maths;
+
+public class CustomParseInt {
+
+	public static void main(String[] args) {
+
+	}
+
+	public int parseInteger(String s) throws NumberFormatException {
+
+		int num = 0;
+
+		return num;
+
+	}
+}

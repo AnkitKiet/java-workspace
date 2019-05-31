@@ -1,0 +1,5 @@
+package com.practice.maths;
+
+public abstract class Try {
+
+}
